@@ -1,0 +1,467 @@
+
+html, body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*font-family: Futura, sans-serif;*/
+ /* font-family: 'Trebuchet MS' , sans-serif;*/
+  font-family: Avenir, sans-serif;
+  font-size: medium;
+  text-align: center;
+  background-color: #CFD1E0;
+  color: #333; /* Kolor tekstu */
+  margin: 0 auto;
+}
+
+header {
+  background-color: #6A7793;
+  text-align: center;
+  margin:0;
+  width:100%;
+  box-sizing:border-box;
+  display:flex;
+}
+
+h1 {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: large;
+  font-family: Avenir, sans-serif;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe{
+  width: 420px;
+  height: 315px;
+  margin: 0 auto;
+}
+
+
+
+#quote{
+  font-size: 30px;
+  font-family: "Apple Chancery", serif;
+  text-align: center;
+  margin: 10px;
+
+}
+#quote2{
+  font-size: 30px;
+  font-family: "Apple Chancery", serif;
+  text-align: center;
+  margin: 20px;
+
+}
+
+.sign{
+  font-size: 15px;
+  font-family: Avenir, sans-serif;
+  text-align: center;
+  text-decoration-color: grey;
+  margin:10px;
+}
+
+.title{
+  font-size: 20px;
+  font-family: Avenir, sans-serif;
+  text-align: center;
+  text-decoration-color: grey;
+  margin:10px;
+
+}
+
+.header-cointeiner{
+  width:15%;
+  display:inline-flex;
+  justify-content:flex-start;
+  margin-left:10px;
+}
+
+
+header nav{
+  width:70%;
+  background:#6A7793;
+  margin:0;
+  display:inline-flex;
+  justify-content:flex-start;
+  box-sizing:border-box;
+}
+
+header nav ul{
+  width:100%;
+  /*padding:10px;*/
+  margin:0;
+  text-align:center;
+  align-items: flex-end;
+  display:inline-block;
+}
+
+header ul li{
+  width:150px;
+  list-style-type:none;
+  display:inline-block;
+  margin:0;
+}
+
+header a{
+  text-decoration:none;
+  color:black;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #6A7793;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  align-items: baseline;
+  display: flex;
+  justify-content:space-evenly;
+  align-self: flex-end;
+
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+}
+
+
+.navbar ul {
+  width: 91%;
+  display: flex; /* Ustawienie nawigacji jako kontenera flexbox */
+  align-items: center; /* Wyśrodkowanie w pionie */
+  top: 0;
+  justify-content:center;
+  flex-wrap: wrap;
+
+}
+
+
+
+.navbar a {
+  display: inline-flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
+  transition: color 0.2s;
+  font-size: 20px;
+}
+
+
+
+.navbar a.active {
+  color: #CFD1E0;
+}
+
+.navbar img {
+  max-width: 150px; /* Dostosowanie szerokości obrazka */
+  box-shadow: none;
+}
+
+.navbar #env:hover{
+  transform: scale(1.3);
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: #CFD1E0;
+
+}
+
+
+main {
+  padding: 20px;
+  display: block;
+  margin-top: 45px;
+  line-height: 1.6;
+  background-color: #CFD1E0;
+}
+
+main p {
+  width: 90%;
+  padding: 30px;
+  display: block;
+  background-color: whitesmoke;
+  margin: 0 auto;
+
+}
+
+.all{
+  width: 90%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 30px;
+  background-color: whitesmoke;
+
+  margin: 0 auto;
+
+}
+
+.special-image {
+  flex-basis: 50%;
+  /*margin: 0 auto;*/
+
+  padding: 0 15px;
+  margin: 0 10px;
+
+
+
+}
+
+.special-image:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.image {
+  flex-basis: 50%;
+
+  padding: 0 15px;
+  margin: 0 10px;
+}
+
+
+.image-kult {
+  flex-basis: 50%;
+  height: 50%;
+  padding: 0 15px;
+}
+
+.text {
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+}
+
+.textonly{
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+a {
+  color: #800020; /* Burgund */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none ;
+}
+
+
+#item{
+  width: 12px;
+  float: right;
+}
+
+
+
+
+/* start*/
+.cc{
+  width: 80%;
+  margin: 0 auto;
+  display: flow;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#carousel-container {
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+
+
+}
+#carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  align-items: center;
+
+}
+.carousel-item {
+  flex: 0 0 300px;
+  width: 100%;
+  margin: 0 auto;
+
+
+
+}
+
+/* Stylizacja przycisków Previous i Next jako strzałek */
+#prev,
+#next {
+  border: none;
+  cursor: pointer;
+  color: #333; /* Kolor strzałek */
+  transition: color 0.2s;
+  margin: 0 auto;
+}
+
+#prev:hover,
+#next:hover {
+  color: #CFD1E0; /* Kolor strzałek po najechaniu myszką */
+}
+
+#prev::before {
+  content: "\2190"; /* Strzałka w lewo */
+}
+
+#next::before {
+  content: "\2192"; /* Strzałka w prawo */
+}
+
+/* koniec */
+
+/*start2*/
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  display: flex;
+  position: relative;
+  width: 31%;
+  height: auto;
+  padding: 5px;
+  margin: 0 auto;
+
+/*
+  border-width: 1px;
+  border-style: ridge;
+  border-color: #6A7793;
+*/
+
+
+}
+
+.column2 {
+  display: flex;
+  position: relative;
+  width: 45%;
+  height: auto;
+  padding: 5px;
+  margin: 0 auto;
+
+  /*
+    border-width: 1px;
+    border-style: ridge;
+    border-color: #6A7793;
+  */
+
+
+}
+
+/* Style the images inside the grid */
+.column img {
+  width: 80%;
+  height: auto;
+  opacity: 1;
+  cursor: pointer;
+  margin:auto;
+
+  border-width: 5px;
+  border-style: ridge;
+  border-color: #6A7793;
+}
+
+.column2 img {
+  width: 80%;
+  height: auto;
+  opacity: 1;
+  cursor: pointer;
+  margin:auto;
+
+  border-width: 5px;
+  border-style: ridge;
+  border-color: #6A7793;
+}
+
+.column img:hover {
+  opacity: 0.8;
+}
+
+.column2 img:hover {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+/*
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  align-items: baseline;
+}
+
+ */
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.whole_image {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  overflow: clip;
+  display: flow;
+
+}
+
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* koniec2*/
+
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #6A7793;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+}
+

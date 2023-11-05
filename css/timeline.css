@@ -1,0 +1,127 @@
+
+.timeline ul {
+  --col-gap: 32px;
+  --row-gap: 32px;
+  --line-w: 4px;
+  display: grid;
+
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(960px, 90%);
+  margin:0 auto;
+
+}
+
+/* line */
+.timeline ul::before {
+  content: "";
+  grid-row: 1 / span 20;
+  background: #CFD1E0;
+}
+
+
+.timeline ul li {
+
+  margin: 20px 0;
+  --accent-color:#41516C;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* date */
+.timeline ul li .date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color:#6A7793;
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+.timeline ul li .foto{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* circle */
+.timeline ul li .date::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  aspect-ratio: 1;
+  border: 10px solid;
+  color:#6A7793;
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+.timeline ul li .title,
+.timeline ul li .descr {
+  position: relative;
+  padding-inline: 1.5rem;
+}
+
+.timeline ul li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+
+}
+.timeline ul li .descr {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+
+
+@media (min-width: 40rem) {
+  .timeline ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  .timeline ul::before {
+    grid-column: 2;
+  }
+  .timeline ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  .timeline ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  .timeline ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  .timeline ul li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  .timeline ul li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  .timeline ul li:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
