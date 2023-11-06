@@ -1,4 +1,4 @@
-
+.form-style-10_first,
 .form-style-10{
   width:450px;
   padding:30px;
@@ -11,6 +11,8 @@
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
+
+
 
 .form-style-10 .inner-wrap{
   padding: 30px;
@@ -42,15 +44,8 @@
   color: #888;
   margin-bottom: 15px;
 }
-.form-style-10 input[type="text"],
-.form-style-10 input[type="date"],
-.form-style-10 input[type="datetime"],
+
 .form-style-10 input[type="email"],
-.form-style-10 input[type="number"],
-.form-style-10 input[type="search"],
-.form-style-10 input[type="time"],
-.form-style-10 input[type="url"],
-.form-style-10 input[type="password"],
 .form-style-10 textarea,
 .form-style-10 select {
   display: block;
@@ -110,4 +105,18 @@
   color: #4D4D4D;
   margin-top: 10px;
   text-align: right;
+}
+
+@media (max-width: 1190px) {
+  .form-style-10_first{
+    padding: 100px 30px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .form-style-10_first,
+  .form-style-10{
+    width:80%;
+  }
 }

@@ -215,6 +215,17 @@ main p {
 
 }
 
+.first_container{
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 30px;
+  background-color: whitesmoke;
+
+  margin: 0 auto;
+}
+
 .special-image {
   flex-basis: 50%;
   /*margin: 0 auto;*/
@@ -239,7 +250,6 @@ main p {
 
 
 .image-kult {
-  flex-basis: 50%;
   height: 50%;
   padding: 0 15px;
 }
@@ -339,9 +349,6 @@ a:hover {
   content: "\2192"; /* Strzałka w prawo */
 }
 
-/* koniec */
-
-/*start2*/
 
 .galery{
   display: flex;
@@ -357,13 +364,6 @@ a:hover {
   padding: 5px;
   margin: 0 auto;
 
-/*
-  border-width: 1px;
-  border-style: ridge;
-  border-color: #6A7793;
-*/
-
-
 }
 
 .column2 {
@@ -373,13 +373,6 @@ a:hover {
   height: auto;
   padding: 5px;
   margin: 0 auto;
-
-  /*
-    border-width: 1px;
-    border-style: ridge;
-    border-color: #6A7793;
-  */
-
 
 }
 
@@ -465,3 +458,38 @@ footer {
   padding: 10px 0;
 }
 
+@media (max-width: 1190px) {
+  .first_container{
+    padding: 100px 30px;
+  }
+
+  .text{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first_container,
+  .container {
+    display: block;
+  }
+
+  .text{
+    width: 90%;
+  }
+}
+
+@media (max-width:680px) {
+  .first_container{
+    padding: 150px 30px;
+  }
+
+  .whole_image,
+  .column,
+  .column2{
+    width: 100%;
+  }
+
+
+
+}
